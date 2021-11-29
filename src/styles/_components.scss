@@ -1,0 +1,32 @@
+@import "src/styles/colors";
+@import "src/styles/devices";
+
+.container {
+  @include for-tablet-portrait-up {
+    padding: 0 3rem;
+    max-width: 1240px;
+  }
+}
+
+
+
+// Property Logos
+.property-logos {
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -190px;
+  width: 100%;
+  border-radius: 10px;
+
+  .is-image {
+      max-width: 200px;
+      padding: 0;
+  }
+}
+
+
+.learn-more {
+  font-weight: 400;
+  color: $zambezi-black;
+}

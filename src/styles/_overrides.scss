@@ -1,0 +1,37 @@
+@import "_colors.scss";
+@import "_fonts.scss";
+
+.button {
+  font-family: 'Sailec', sans-serif;
+  font-weight: 700;
+  height: 3rem;
+
+  &.is-rounded {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &.is-primary {
+    background-color: $aqwire-blue;
+  }
+
+  &.is-transparent {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+
+// Tabs
+
+.tabs  {
+  a {
+    font-family: 'Sailec', sans-serif;
+    font-weight: 700;
+  }
+
+  li.is-active a {
+    border-bottom-color: $aqwire-blue;
+    color: $aqwire-blue;
+  }
+}
