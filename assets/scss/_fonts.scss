@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'Cera Round Pro';
+	font-weight: 700;
+	src: url('../fonts/TypeMates\ \ Cera\ Round\ Pro\ Bold.woff');
+}
+
+@font-face {
+	font-family: 'Cera Round Pro';
+	font-weight: 300;
+	src: url('../fonts/TypeMates\ \ CeraRoundProRegular.woff');
+}
+
+.bold-font {
+	font-family: "Cera Round Pro", sans-serif;
+	font-weight: 700;
+
+	&.size-01 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	&.size-02 {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	&.size-03 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&.size-04 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	&.size-05 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	&.size-06 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	&.size-07 {
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	&.size-08 {
+		font-size: 46px;
+		line-height: 54px;
+	}
+
+	&.size-09 {
+		font-size: 56px;
+		line-height: 64px;
+	}
+
+}
+
+.regular-font {
+	font-family: "Cera Round Pro Regular", sans-serif;
+	font-weight: 400;
+
+	&.size-01 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	&.size-02 {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	&.size-03 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&.size-04 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	&.size-05 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	&.size-06 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	&.size-07 {
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	&.size-08 {
+		font-size: 46px;
+		line-height: 54px;
+	}
+
+	&.size-09 {
+		font-size: 56px;
+		line-height: 64px;
+	}
+
+}
+
+

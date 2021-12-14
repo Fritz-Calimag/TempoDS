@@ -1,0 +1,16 @@
+{
+  "name": "4gds",
+  "version": "1.0.0",
+  "description": "4Gives DS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {}
+}
