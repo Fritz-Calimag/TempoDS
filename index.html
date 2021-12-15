@@ -59,16 +59,26 @@
         </div> -->
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
+      <nav id="navbar" class="sidebar nav-menu navbar">
+        <ul class="nav flex-column" id="nav_accordion">
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Style Guides</span></a></li>
+
+          <!-- <i class="bx bx-file-blank"></i> -->
+          <li class="nav-item has-submenu"><a href="#" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span> Style Guides </span>  </a>
+            <ul class="submenu collapse">
+              <li><a class="nav-link scrollto" href="#colors">Colors </a></li>
+              <li><a class="nav-link scrollto" href="#colorcomb">Color Combinations </a></li>
+              <li><a class="nav-link scrollto" href="#typography">Typography </a> </li>
+              <li><a class="nav-link scrollto" href="#spacing">Spacing </a> </li>
+            </ul>
+          </li>
+          
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atoms & Molecules</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Organisms</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Templates</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
     </div>
   </header><!-- End Header -->
 
@@ -314,7 +324,7 @@
           </div> -->
   
           <div class="row">
-            <h2 class="section-title">Colors</h2>
+            <h2 class="section-title" id="colors">Colors</h2>
             <p class="col-lg-9">Each color has its own role in the Design System. You can find a short info below each color name on what it is used for. Feel free to edit and add your own colors.</p>
           </div>
           
@@ -978,7 +988,7 @@
       <section id="facts" class="facts">
         <div class="container">
           <div class="section-title">
-            <h2>Color Combinations</h2>
+            <h2 id="colorcomb">Color Combinations</h2>
             <p>Use the following as a guide for how and when to use colors from our palette together.</p>
           </div>
           <div class="row">
@@ -1100,7 +1110,7 @@
       <section class="section-bg">
         <div class="container">
           <div class="section-title">
-            <h2>Typography</h2>
+            <h2 id="typography">Typography</h2>
             <p>Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product and experience. It is the core structure of any well designed interface.</p>
           </div>
 
@@ -1451,7 +1461,7 @@
       <section>
         <div class="container">
           <div class="section-title">
-            <h2>Spacing</h2>
+            <h2 id="spacing">Spacing</h2>
             <p>Consistent spacing creates visual balance that makes the user interface (UI) easier for merchants to scan. Apply consistent spacing to improve the quality of the UI.
             </p>
           </div>
@@ -2127,3 +2137,33 @@
 </body>
 
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
+    
+    element.addEventListener('click', function (e) {
+
+      let nextEl = element.nextElementSibling;
+      let parentEl  = element.parentElement;	
+
+        if(nextEl) {
+            e.preventDefault();	
+            let mycollapse = new bootstrap.Collapse(nextEl);
+            
+            if(nextEl.classList.contains('show')){
+              mycollapse.hide();
+            } else {
+                mycollapse.show();
+                // find other submenus with class=show
+                var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                // if it exists, then close all of them
+                if(opened_submenu){
+                  new bootstrap.Collapse(opened_submenu);
+                }
+            }
+        }
+    }); // addEventListener
+  }) // forEach
+}); 
+</script>
