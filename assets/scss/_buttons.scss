@@ -1,0 +1,82 @@
+.button {
+    width: 164px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-weight: 700;
+
+    &.primary {
+      background: $yellow-10;
+      border: 1px solid $yellow-10;
+    }
+
+    &.default {
+      background: $white-04;
+      border: 1px solid $white-04;
+    }
+
+    &.warning {
+      background: $red-04;
+      border: 1px solid $red-04;
+    }
+
+    &.alt {
+      background: $white-07;
+      border: 1px solid $white-07;
+    }
+
+    &.outline {
+        background: none;
+    }
+
+    &.disabled {
+        opacity: 0.4;
+    }
+
+    &.xl {
+      width: 257px;
+      height: 48px;
+    }
+
+    &.small {
+      width: 132px;
+      height: 30px;
+    }
+}
+  
+  #correct-btn1 {
+    background: #E7F3FC;
+    border: 1px solid #399DE5;
+    color: #399DE5
+  }
+  
+  #incorrect-btn1 {
+    background: #FFF9E0;
+    border: 1px solid #FFCC00;
+    color: #EB3800;
+  }
+  
+  #correct-btn2 {
+    background: #30CCD8;
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  #incorrect-btn2 {
+    background: #C3F1F5;
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  #correct-btn3 {
+    background: #FFFFFF;
+    color: #EB3800;
+    border: 1px solid #EB3800;
+  }
+  
+  #incorrect-btn3 {
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+  }
+  

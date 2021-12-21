@@ -76,6 +76,65 @@
     font-size: 56px;
     line-height: 64px; }
 
+.button {
+  width: 164px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 700; }
+  .button.primary {
+    background: #FFDB46;
+    border: 1px solid #FFDB46; }
+  .button.default {
+    background: #E8E8E8;
+    border: 1px solid #E8E8E8; }
+  .button.warning {
+    background: #F1744D;
+    border: 1px solid #F1744D; }
+  .button.alt {
+    background: #8C8C8C;
+    border: 1px solid #8C8C8C; }
+  .button.outline {
+    background: none; }
+  .button.disabled {
+    opacity: 0.4; }
+  .button.xl {
+    width: 257px;
+    height: 48px; }
+  .button.small {
+    width: 132px;
+    height: 30px; }
+
+#correct-btn1 {
+  background: #E7F3FC;
+  border: 1px solid #399DE5;
+  color: #399DE5; }
+
+#incorrect-btn1 {
+  background: #FFF9E0;
+  border: 1px solid #FFCC00;
+  color: #EB3800; }
+
+#correct-btn2 {
+  background: #30CCD8;
+  color: #FFFFFF;
+  border: none; }
+
+#incorrect-btn2 {
+  background: #C3F1F5;
+  color: #FFFFFF;
+  border: none; }
+
+#correct-btn3 {
+  background: #FFFFFF;
+  color: #EB3800;
+  border: 1px solid #EB3800; }
+
+#incorrect-btn3 {
+  background: #000000;
+  color: #FFFFFF;
+  border: none; }
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -561,7 +620,6 @@ p {
 
 .color-desc {
   margin-top: 2rem;
-  height: 3rem;
   font-family: "Cera Round Pro Thin", sans-serif; }
 
 .color-combination-row {
@@ -571,49 +629,16 @@ p {
   border-bottom: 1px solid #E8E8E8; */
   display: flex; }
 
-.button {
-  width: 164px;
-  height: 48px;
-  box-sizing: border-box;
-  border-radius: 100px;
-  font-weight: 700; }
-
-#correct-btn1 {
-  background: #E7F3FC;
-  border: 1px solid #399DE5;
-  color: #399DE5; }
-
-#incorrect-btn1 {
-  background: #FFF9E0;
-  border: 1px solid #FFCC00;
-  color: #EB3800; }
-
-#correct-btn2 {
-  background: #30CCD8;
-  color: #FFFFFF;
-  border: none; }
-
-#incorrect-btn2 {
-  background: #C3F1F5;
-  color: #FFFFFF;
-  border: none; }
-
-#correct-btn3 {
-  background: #FFFFFF;
-  color: #EB3800;
-  border: 1px solid #EB3800; }
-
-#incorrect-btn3 {
-  background: #000000;
-  color: #FFFFFF;
-  border: none; }
-
 /* .container-overwrite{
   padding-bottom: 10rem;
 } */
 .color-guide-section {
-  /* background: #FAFAFA; */
-  padding: 2rem 2rem 2rem 2rem; }
+  background: #FAFAFA;
+  padding: 2rem 2rem 6rem 2rem;
+  border-radius: 8px; }
+  .color-guide-section .frame {
+    background: #FFFFFF;
+    padding: 2rem 2rem 2rem 2rem; }
 
 .color-guide {
   padding-top: 0rem; }
@@ -664,6 +689,147 @@ p {
   .spacing.mammoth {
     width: 160px; }
 
+.icons-row {
+  display: flex;
+  padding-bottom: 1.5rem; }
+  .icons-row .icon {
+    max-width: 24px;
+    margin-right: 1.5rem; }
+
+.drop-shadow span {
+  font-size: 20px; }
+
+.drop-shadow p {
+  margin-top: 1rem;
+  font-size: 14px; }
+
+.drop-shadow-box {
+  border: 1px solid #D9D9D9;
+  padding: 1rem 1rem 10rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem; }
+  .drop-shadow-box.xs {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08); }
+  .drop-shadow-box.sm {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.11); }
+  .drop-shadow-box.md {
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.15); }
+  .drop-shadow-box.lg {
+    box-shadow: 0px 13px 37px rgba(0, 0, 0, 0.21); }
+  .drop-shadow-box.xl {
+    box-shadow: 0px 20px 56px rgba(0, 0, 0, 0.29); }
+
+/*--------------------------------------------------------------
+# Alerts
+--------------------------------------------------------------*/
+.alert-container {
+  margin-top: 1.5rem;
+  padding-left: 20rem; }
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.alert-4gives {
+  padding: 8px;
+  display: flex;
+  width: 263px;
+  height: 40px;
+  border-radius: 6px; }
+  .alert-4gives span {
+    padding: 8px 0px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center; }
+  .alert-4gives.success {
+    background: #E0F3C8;
+    border: 2px solid #68BC20; }
+  .alert-4gives.warning {
+    background: #F9C3B3;
+    border: 2px solid #E52B00; }
+  .alert-4gives .icon {
+    margin: 0rem 1rem;
+    max-width: 1rem; }
+    .alert-4gives .icon.success {
+      fill: #68BC20; }
+    .alert-4gives .icon.warning {
+      color: #E52B00; }
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.button {
+  width: 176px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 700; }
+  .button.primary {
+    background: #FFDB46;
+    border: 1px solid #FFDB46; }
+  .button.default {
+    background: #E8E8E8;
+    border: 1px solid #E8E8E8; }
+  .button.warning {
+    background: #F1744D;
+    border: 1px solid #F1744D; }
+  .button.alt {
+    background: #8C8C8C;
+    border: 1px solid #8C8C8C; }
+  .button.outline {
+    background: none; }
+  .button.disabled {
+    opacity: 0.4; }
+  .button.xl {
+    width: 257px;
+    height: 48px;
+    font-size: 24px; }
+  .button.small {
+    width: 132px;
+    height: 30px;
+    font-size: 14px; }
+
+#correct-btn1 {
+  background: #E7F3FC;
+  border: 1px solid #399DE5;
+  color: #399DE5; }
+
+#incorrect-btn1 {
+  background: #FFF9E0;
+  border: 1px solid #FFCC00;
+  color: #EB3800; }
+
+#correct-btn2 {
+  background: #30CCD8;
+  color: #FFFFFF;
+  border: none; }
+
+#incorrect-btn2 {
+  background: #C3F1F5;
+  color: #FFFFFF;
+  border: none; }
+
+#correct-btn3 {
+  background: #FFFFFF;
+  color: #EB3800;
+  border: 1px solid #EB3800; }
+
+#incorrect-btn3 {
+  background: #000000;
+  color: #FFFFFF;
+  border: none; }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -696,7 +862,7 @@ section {
   left: 0; }
 
 .section-title p {
-  margin-bottom: 0; }
+  margin-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # About
@@ -730,9 +896,6 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px; }
-
 .facts .count-box {
   padding: 30px;
   width: 100%; }
