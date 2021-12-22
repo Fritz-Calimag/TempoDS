@@ -620,7 +620,8 @@ p {
 
 .color-desc {
   margin-top: 2rem;
-  font-family: "Cera Round Pro Thin", sans-serif; }
+  font-family: "Cera Round Pro Thin", sans-serif;
+  min-height: 48px; }
 
 .color-combination-row {
   margin-top: 1rem;

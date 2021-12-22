@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive",
-    "scss": "node-sass --watch assets/scss -o assets/css"
+    "scss": "node-sass --watch src/assets/scss -o src/assets/css"
   },
   "author": "",
   "license": "ISC",
